@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+    color : #636363;
+}
+.vh {
+    height: 100%;
+}
+.dropdown-toggle::after { 
+    content: none; 
+}
+.dropdown-extra {
+    color : #636363;
+    font-size: 15px;
+}
+.img-size {
+    width : 100%;
+}
+.img-size-01 {
+    width : 92%;
+}
+.tm-color-brand {
+    color : #feca4c !important;
+}
+.tm-color-brand-01 {
+    color : #fe4e59 !important;
+}
+.tm-color-brand-02 {
+    color : #67a1f7 !important;
+}
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.para {
+    font-size : 20px
+}
+.logo-font {
+    font-size: 35px;
+}
+.left-container {
+    background-color: white;
+}
