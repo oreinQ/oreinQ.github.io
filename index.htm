@@ -10,6 +10,7 @@
         <link rel='stylesheet' href='assets/css/style.css'>
         <link rel='stylesheet' href='assets/css/blue-theme.css'>
         <link rel='stylesheet' href='assets/css/slider.css'>
+        <!-- <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"> -->
         <script src='assets/dist/js/bootstrap.min.js'></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="assets/js/script.js"></script>
@@ -25,10 +26,10 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav m-auto">
                       <li class="nav-item px-3">
-                        <a class="nav-link" aria-overflow: 0px;current="page" href="#">Home</a>
+                        <a class="nav-link" aria-overflow: 0px;current="page" href="#home">Home</a>
                       </li>
                       <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#features">Features</a>
                       </li>
                       <li class="nav-item dropdown px-3">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -47,7 +48,7 @@
                 </div>
           </nav>
           <!-- navBar end -->
-          <div class="left-container shadow-sm">
+          <div id='home' class="left-container">
           <div class='container pb-5'> 
             <div class='row py-4 vh'>
                 <div class='order-2 order-sm-1 col-sm-8 col-lg' data-aos="fade-right" data-aos-duration="700">
@@ -61,33 +62,46 @@
                 </div>
             </div>            
           </div>
-          <div class='bg-container shadow-inset'>
-            <div class='bg-transparent-grey shadow-inset'>
+          <div class='bg-container border-radius-custom' id='features'>
+            <div class='bg-transparent-grey'>
               <div class='container p-3 vh'>
-                <div class='row'>
-                  <div class='order-2 order-sm-1 col-sm-8 col-lg p-5'>
-                    <h1>Features</h1>
+                <div class='row p-5'>
+                  <h1 class='text-center'>Features</h1>
+                  <div class='col-sm-8 col-lg p-3' data-aos="fade-down" data-aos-duration="700">
                     <p>
-                      <ul class="list-group border-0">
-                        <li class="list-group-item bg-transparent border-0">Add friends</li>
-                        <li class="list-group-item bg-transparent border-0">Privacy</li>
-                        <li class="list-group-item bg-transparent border-0">Secret Conversation</li>
-                        <li class="list-group-item bg-transparent border-0">Attractive UI </li>
-                        <!-- <li class="list-group-item bg-transparent border-0">Vestibulum at eros</li> -->
+                      <h2 class='feature-header tm-color-brand'>Mobile</h2>
+                      <ul class="list-group border-0 feature-text">
+                        <li class="list-group-item bg-transparent border-0 pl-0">Add friends</li>
+                        <li class="list-group-item bg-transparent border-0 pl-0">Privacy</li>
+                        <li class="list-group-item bg-transparent border-0 pl-0">Secret Conversation</li>
+                        <li class="list-group-item bg-transparent border-0 pl-0">Attractive UI </li>
+                        <li class="list-group-item bg-transparent border-0 pl-0">3 different themes</li>
                       </ul>
                     </p>
                   </div>
                   <!-- Slider  -->
-                  <div class = ''>
+                  <div class = 'col-sm-8 col-lg-6 p-3'>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block mock-size" src="assets/image/mockup/theme01.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block mock-size" src="assets/image/mockup/theme02.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block mock-size" src="assets/image/mockup/theme03.png" alt="Third slide">
+                        </div>
+                      </div>
+                    </div>
                   </div>
               <!-- slider end  -->
               </div>              
             </div>
           </div>
           <!-- Footer  -->
-          <div class="card border-0">
+          <div class="card border-0 rounded-0">
             <div class="card-body">
-              <hr>
               <div class='container p-2'>
                 <blockquote class="blockquote mb-0">
                     <!-- Footer Links -->
