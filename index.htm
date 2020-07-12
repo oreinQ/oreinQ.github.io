@@ -8,11 +8,14 @@
         <link rel='stylesheet' href='assets/dist/css/bootstrap.min.css' >
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel='stylesheet' href='assets/css/style.css'>
+        <link rel='stylesheet' href='assets/css/blue-theme.css'>
+        <link rel='stylesheet' href='assets/css/slider.css'>
         <script src='assets/dist/js/bootstrap.min.js'></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="assets/js/script.js"></script>
     </head>
     <body>
+        <!-- navBar  -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <div class="container px-5">
                   <a class="navbar-brand tm-color-brand logo-font" href="#"><b>Orein</b></a>
@@ -20,42 +23,101 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                      <li class="nav-item px-3 ">
+                    <ul class="navbar-nav m-auto">
+                      <li class="nav-item px-3">
                         <a class="nav-link" aria-overflow: 0px;current="page" href="#">Home</a>
                       </li>
-                      <li class="nav-item px-3 ">
+                      <li class="nav-item px-3">
                         <a class="nav-link" href="#">Features</a>
                       </li>
-                      <li class="nav-item dropdown px-3 ">
+                      <li class="nav-item dropdown px-3">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
                           Theme
                         </a>
                         <ul class="dropdown-menu border-0 shadow p-0 rounded-lg" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item dropdown-extra p-3" href="public/index01.htm">Theme-1</a></li>
+                          <li><a class="dropdown-item dropdown-extra p-3" href="#">Theme-1</a></li>
                           <li><a class="dropdown-item dropdown-extra p-3" href="public/index02.htm">Theme-2</a></li>
-                          <li><a class="dropdown-item dropdown-extra p-3" href="#">Theme-3</a></li>
+                          <li><a class="dropdown-item dropdown-extra p-3" href="public/index01.htm">Theme-3</a></li>
                         </ul>
                       </li>
                     </ul>
+                    <!-- Button For Purchase  -->
+                    <button class="btn btn-bg rounded-pill px-3 border-0 shadow-custom" type="submit">Purchase</button>
                   </div>
                 </div>
           </nav>
-          <div class="left-container">
-          <div class='container'> 
+          <!-- navBar end -->
+          <div class="left-container shadow-sm">
+          <div class='container pb-5'> 
             <div class='row py-4 vh'>
-                <div class='col-sm-8 col-lg text-center p-5' data-aos="fade-right" data-aos-duration="700">
+                <div class='order-2 order-sm-1 col-sm-8 col-lg' data-aos="fade-right" data-aos-duration="700">
+                  <img class='img-size' src='assets/image/mobile-marketing-concept-illustration/3661710.jpg'>
+                </div>
+                <div class='order-1 order-sm-2 col-sm-8 col-lg text-center p-5' data-aos="fade-left" data-aos-duration="700">
                     <h1 class="tm-color heading p-2">Welcome to <span class='tm-color-brand'>Orein</span></h1>
                     <p class='para'>
                       Chat messages are generally short in order to enable other participants to respond quickly.</p>
                 </div>
-                <div class='col-sm-8 col-lg' data-aos="fade-left" data-aos-duration="700">
-                    <img class='img-size' src='assets/image/online-world-concept-illustration/3946511.jpg'>
-                </div>
                 </div>
             </div>            
           </div>
+          <div class='bg-container shadow-inset'>
+            <div class='bg-transparent-grey shadow-inset'>
+              <div class='container p-3 vh'>
+                <div class='row'>
+                  <div class='order-2 order-sm-1 col-sm-8 col-lg p-5'>
+                    <h1>Features</h1>
+                    <p>
+                      <ul class="list-group border-0">
+                        <li class="list-group-item bg-transparent border-0">Add friends</li>
+                        <li class="list-group-item bg-transparent border-0">Privacy</li>
+                        <li class="list-group-item bg-transparent border-0">Secret Conversation</li>
+                        <li class="list-group-item bg-transparent border-0">Attractive UI </li>
+                        <!-- <li class="list-group-item bg-transparent border-0">Vestibulum at eros</li> -->
+                      </ul>
+                    </p>
+                  </div>
+                  <!-- Slider  -->
+                  <div class = ''>
+                  </div>
+              <!-- slider end  -->
+              </div>              
+            </div>
+          </div>
+          <!-- Footer  -->
+          <div class="card border-0">
+            <div class="card-body">
+              <hr>
+              <div class='container p-2'>
+                <blockquote class="blockquote mb-0">
+                    <!-- Footer Links -->
+                  <div class="container-fluid text-center text-md-left">
+                    <!-- Grid row -->
+                    <div class="row">
+                      <!-- Grid column -->
+                      <div class="col-md-6 mt-md-0 mt-3">
 
+                        <!-- Content -->
+                        <h5 class="tm-color-brand">Orein</h5>
+                        <p>
+                          <b>Chirag Budhiraja</b><br>
+                          <a class='link' href='mailto:imchirag2000@gmail.com'>imchirag2000@gmail.com</a>
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Grid row -->
+                  </div>
+                  <!-- Footer Links -->
+                  <!-- Copyright -->
+                  <div class="footer-copyright text-center py-3">©2020 Copyright:
+                    <a class='link' href="http://itschirag.me/">  <b>@TecDoc</b></a>
+                  </div>
+                  <!-- Copyright -->
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <!-- Footer end -->
         <script>
             AOS.init();
         </script>

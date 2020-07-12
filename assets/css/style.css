@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
 body, html {
     width: 100%;
     overflow-x: hidden;
@@ -7,8 +6,25 @@ body, html {
 .vh {
     height: 100%;
 }
+.blockquote {
+    font-size : 15px;
+}
+.link {
+    color : #636363;
+}
+.link:hover {
+    color : #636363;
+}
 .dropdown-toggle::after { 
     content: none; 
+}
+.dropdown-item:active {
+    background-color: #f8f8f8;
+    color : black;
+}
+.dropdown-item:hover {
+    background-color: #f8f8f8;
+    color : black;
 }
 .dropdown-extra {
     color : #636363;
@@ -20,28 +36,36 @@ body, html {
 .img-size-01 {
     width : 92%;
 }
-.tm-color-brand {
-    color : #feca4c !important;
-}
-.tm-color-brand-01 {
-    color : #fe4e59 !important;
-}
-.tm-color-brand-02 {
-    color : #67a1f7 !important;
-}
 .navbar-toggler:focus {
     outline: none !important;
     box-shadow: none !important;
+}
+.bg-container {
+    background-image: url('../image/bg-clone2.jpg');
+    background-size: cover;
+}
+.bg-transparent-grey {
+    background-color: #272727a1;
+    color : white;
+}
+.bg-transparent {
+    background-color: none;
+    color : white;
 }
 .heading {
     font-size: 60px;
 }
 .para {
-    font-size : 25px
+    font-size : 23px
 }
 .logo-font {
     font-size: 35px;
 }
 .left-container {
     background-color: white;
+}
+.shadow-inset {
+    -webkit-box-shadow: inset 1px 2px 39px -36px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 1px 2px 39px -36px rgba(0,0,0,0.75);
+    box-shadow: inset 1px 2px 39px -36px rgba(0,0,0,0.75);
 }
