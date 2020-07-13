@@ -14,6 +14,11 @@ html {
 .feature-header {
   font-size: 40px;
 }
+.card-img-1 {
+  background-image: url('../image/card-img01.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 .vh {
   height: 100%;
 }
@@ -77,9 +82,9 @@ html {
   background-color: white;
 }
 .shadow-inset {
-  -webkit-box-shadow: inset 1px 2px 39px -36px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset 1px 2px 39px -36px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 1px 2px 39px -36px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 0px 0px 15px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 15px 1px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 15px 1px rgba(0,0,0,0.75);
 }
 .mock-size {
   width: 60%;
@@ -108,7 +113,7 @@ html {
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .mock-size {
-    width: 60%;
+    width: 37%;
     margin: auto;
   }
 }
@@ -116,7 +121,25 @@ html {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .mock-size {
-    width: 60%;
+    width: 37%;
     margin: auto;
   }
+}
+.default-color-text {
+  color: #636363;
+}
+.img-size-text {
+  width : 100%;
+}
+.p-35 {
+  padding : 35%;
+}
+.p-50 {
+  padding-left : 40%;
+  padding-right : 40%;
+  margin-right : 30%;
+  margin-left : 30%;
+}
+.width-100 {
+  width : 100%;
 }
