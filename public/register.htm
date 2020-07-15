@@ -16,7 +16,7 @@
         rel="stylesheet">
     <script src='../assets/dist/js/bootstrap.min.js'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -24,20 +24,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container px-5">
             <a class="navbar-brand tm-color-brand logo-font" href="#"><b>Orein</b></a>
-            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" id="nav-btn">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item px-3">
                         <a class="nav-link" aria-overflow: 0px;current="page" href="../index.htm">Home</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="../index.htm#features">Features</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="../index.htm#team">Team</a>
                     </li>
                     <li class="nav-item dropdown px-3">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -47,7 +40,7 @@
                         <ul class="dropdown-menu border-0 shadow p-0 rounded-lg"
                             aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item dropdown-extra p-3" href="login.htm">Login</a></li>
-                            <li><a class="dropdown-item dropdown-extra p-3" href="#register">Register</a></li>
+                            <li><a class="dropdown-item dropdown-extra p-3" href="#">Register</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -56,6 +49,30 @@
             </div>
         </div>
     </nav>
+    <!-- Sidebar  -->
+    <div class='transe w-60 fixed-top d-lg-none'>
+        <ul class='list-group shadow bg-white vh-100 slide-in-left d-none px-2' id='nav-list'>
+            <a class="navbar-brand tm-color-brand logo-font py-3 px-4" href="#"><b>Orein</b><button
+                    class='border-0 position-absolute btn-extra ml-5' id='close-btn'>&times;</button></a>
+            <li class='list-group-item border-0'>
+                <a class="a-link my-3" aria-overflow: 0px;current="page" href="../index.htm" id="nav-btn">Home</a>
+            </li>
+            <li class="list-group-item border-0">
+                <button class='a-link border-0 btn-extra mb-3 p-0 m-0' type='button' id='account-btn'>Account</button>
+                <ul class='p-2 shadow mx-2 mb-3 rounded-lg d-none' id='account-list'>
+                    <li class="list-group-item border-0">
+                        <a class="a-link" href="login.htm">Login</a>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <a class="a-link" href="#">Register</a>
+                    </li>
+                </ul>
+            </li>
+            <button class="btn btn-bg w-50 rounded-pill mx-2 px-3 border-0 shadow-custom m-0"
+                type="submit">Purchase</button>
+        </ul>
+    </div>
+    <!-- sidebar end  -->
     <!-- navBar end -->
     <!-- container  -->
     <div class='bg-login p-4'>

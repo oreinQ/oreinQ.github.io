@@ -1,11 +1,17 @@
+const navBtn = document.getElementById('nav-btn');
+const closeBtn = document.getElementById('close-btn');
+const accountBtn = document.getElementById('account-btn');
+const accountList = document.getElementById('account-list');
+const navList = document.getElementById('nav-list');
 
-// // let currentValue = "2";
+function menuHandler() {
+    navList.classList.toggle('d-none');
+    navBtn.classList.toggle('d-none');
+}
+function accountHandler() {
+    accountList.classList.toggle('d-none');
+}
 
-// function badgeHandler() {
-//     let badgeBtn = document.getElementById('badge').innerHTML;
-//     let currentValue = 0;
-//     console.log('working');
-//     badgeBtn = currentValue + 1 ;
-// }
-
-// // badgeBtn.addEventListener('click', badgeBtn);
+navBtn.addEventListener('click', menuHandler);
+closeBtn.addEventListener('click', menuHandler);
+accountBtn.addEventListener('click', accountHandler);
